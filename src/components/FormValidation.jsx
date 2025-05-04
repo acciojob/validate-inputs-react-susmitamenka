@@ -81,4 +81,4 @@ const FormValidation=()=>{
         </div>
     )
 }
-export default FormValidation
+export default FormValidation;
