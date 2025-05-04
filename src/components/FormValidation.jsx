@@ -33,7 +33,7 @@ const FormValidation=()=>{
             newErrors.Mobile='Mobile number should not be more than 10 characters';
           }
           setError(newErrors);
-          return  object.keys(newErrors).length === 0;
+          return  Object.keys(newErrors).length === 0;
     }
 
     function handleSubmit(e){
