@@ -20,7 +20,7 @@ const FormValidation=()=>{
         const newErrors ={}
 
         if (!/^[A-Za-z\s]+$/.test(Name)) {
-            newErrors.name = 'Name should contain only letters';
+            newErrors.Name = 'Name should contain only letters';
           }
 
           if(/[^A-Za-z0-9\s]/.test(Address)){
@@ -33,8 +33,7 @@ const FormValidation=()=>{
             newErrors.Mobile='Mobile number should not be more than 10 characters';
           }
           setError(newErrors);
-          //return 
-        //   object.keys(newErrors).length === 0;
+          return  object.keys(newErrors).length === 0;
     }
 
     function handleSubmit(e){
@@ -53,23 +52,23 @@ const FormValidation=()=>{
                 <div>
                     <label>Name</label>
                     <input type="text"onChange={updateField} name="Name" value={Name}/>
-                    {errors.name && <div className="errorMessage">{errors.name}</div>}
+                    {errors.Name && <div className="errorMessage">{errors.Name}</div>}
                 </div>
                 <div>
                     <label>Address</label>
                     <input type="text"onChange={updateField} name="Address" value={Address}/>
-                    {errors.address && <div className="errorMessage">{errors.address}</div>}
+                    {errors.Address && <div className="errorMessage">{errors.Address}</div>}
                 </div>
                 <div>
                     <label>Email</label>
                     <input type="text" onChange={updateField} name="Email" value={Email}/>
-                    {errors.email && <div className="errorMessage">{errors.email}</div>}
+                    {errors.Email && <div className="errorMessage">{errors.Email}</div>}
 
                 </div>
                 <div>
                     <label>Mobile</label>
                     <input type="number" onChange={updateField} name="Mobile" value={Mobile}/>
-                    {errors.mobile && <div className="errorMessage">{errors.mobile}</div>}
+                    {errors.Mobile && <div className="errorMessage">{errors.Mobile}</div>}
 
                 </div>
              
