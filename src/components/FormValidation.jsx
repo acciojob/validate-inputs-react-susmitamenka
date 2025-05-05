@@ -52,23 +52,23 @@ const FormValidation=()=>{
                 <div>
                     <label>Name</label>
                     <input type="text"onChange={updateField} name="Name" value={Name}/>
-                    {errors.Name && <div class="errorMessage">{errors.Name}</div>}
+                    <div class="errorMessage">{errors.Name}</div>
                 </div>
                 <div>
                     <label>Address</label>
                     <input type="text"onChange={updateField} name="Address" value={Address}/>
-                    {errors.Address && <div class="errorMessage">{errors.Address}</div>}
+                    <div class="errorMessage">{errors.Address}</div>
                 </div>
                 <div>
                     <label>Email</label>
                     <input type="text" onChange={updateField} name="Email" value={Email}/>
-                    {errors.Email && <div class="errorMessage">{errors.Email}</div>}
+                    <div class="errorMessage">{errors.Email}</div>
 
                 </div>
                 <div>
                     <label>Mobile</label>
                     <input type="number" onChange={updateField} name="Mobile" value={Mobile}/>
-                    {errors.Mobile && <div class="errorMessage">{errors.Mobile}</div>}
+                    <div class="errorMessage">{errors.Mobile}</div>
 
                 </div>
              
